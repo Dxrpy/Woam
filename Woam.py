@@ -1,9 +1,3 @@
-# TO PLAY ONE OF THE ENDINGS IN WOAM YOU HAVE TO INSTALL THE 'pygame' MODULE #
-# HOW TO DO SO: #
-# File > Settings > Project: example > Project Interpreter #
-# CLICK THE "+" BUTTON AND TYPE "pygame" #
-# INSTALL THE PACKAGE #
-
 # Imports Time/ Sleep and Random
 import time
 import random
@@ -39,7 +33,7 @@ print('''
  \        (  <_> ) __ \|  Y Y  |
   \__/\  / \____(____  /__|_|  /
        \/            \/      \/
-Made by Dxrpy (A.k.a Ethan Crump)
+Made by Dxrpy
        ''')
 start = input('Press the enter key to start ')
 winsound.PlaySound(None, winsound.SND_PURGE)
@@ -51,7 +45,7 @@ winsound.PlaySound(None, winsound.SND_PURGE)
 
 
 ### Easter Egg ###
-if start == ('EthanIsTheBestCoder'):
+if start == ('DxrpyIsTheBestCoder'):
     print('You win.')
     time.sleep(2)
     print('No questions asked.')
