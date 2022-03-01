@@ -1,4 +1,5 @@
 # Imports Time/ Sleep and Random
+import sys
 import time
 import random
 import winsound
@@ -11,21 +12,23 @@ health = 3
 
 # Save directory
 username = getpass.getuser()
+path = os.path.dirname(__file__)
 
 # Define dieimg to save an image to the desktop
 def dieimg():
     urllib.request.urlretrieve("https://i.ytimg.com/vi/mwuUUY1wuBU/maxresdefault.jpg",
-                               "C:\\Users\\" + username + "\\Desktop\\GG_This_Is_For_You.jpg")
-    os.startfile('C:\\Users\\' + username + '\\Desktop\\GG_This_Is_For_You.jpg')
+                               path + '\\GG_This_Is_For_You.jpg')
+    os.startfile(path + '\\GG_This_Is_For_You.jpg')
+
 
 # Define winimg to save an image to the desktop
 def winimg():
     urllib.request.urlretrieve("https://ih1.redbubble.net/image.695347668.1283/throwpillow,small,1000x-bg,f8f8f8-c,0,200,1000,1000.jpg",
-                               "C:\\Users\\" + username + "\\Desktop\\You_Win.jpg")
-    os.startfile('C:\\Users\\' + username + '\\Desktop\\You_Win.jpg')
+                               path + "\\You_Win.jpg")
+    os.startfile(path + '\\You_Win.jpg')
 
 # Start Game Input
-winsound.PlaySound('C:\\Users\\' + username + '\\Desktop\\WoamSFX\\menu_music.wav',winsound.SND_ASYNC)
+winsound.PlaySound(path + '\\WoamSFX\\menu_music.wav',winsound.SND_ASYNC)
 print('''
  __      __                     
 /  \    /  \_________    _____  
@@ -39,7 +42,7 @@ start = input('Press the enter key to start ')
 winsound.PlaySound(None, winsound.SND_PURGE)
 
 # Plays sound effect
-winsound.PlaySound('C:\\Users\\' + username + '\\Desktop\\WoamSFX\\start_game.wav',winsound.SND_ASYNC)
+winsound.PlaySound(path + '\\WoamSFX\\start_game.wav',winsound.SND_ASYNC)
 time.sleep(1)
 winsound.PlaySound(None, winsound.SND_PURGE)
 
@@ -82,7 +85,7 @@ for x in range(9):
 print('BAM! QUEUE THE POKEMON ENCOUNTER MUSIC')
 print('(For you numbnuts, that means a wild enemy is attacking.)')
 print()
-winsound.PlaySound('C:\\Users\\' + username + '\\Desktop\\WoamSFX\\encounter.wav',winsound.SND_ASYNC)
+winsound.PlaySound(path + '\\WoamSFX\\encounter.wav',winsound.SND_ASYNC)
 time.sleep(4)
 
 
@@ -104,7 +107,7 @@ attack1 = input('')
 
 # Pokemon end sound effect
 winsound.PlaySound(None, winsound.SND_PURGE)
-winsound.PlaySound('C:\\Users\\' + username + '\\Desktop\\WoamSFX\\pokemon_end.wav',winsound.SND_ASYNC)
+winsound.PlaySound(path + '\\WoamSFX\\pokemon_end.wav',winsound.SND_ASYNC)
 time.sleep(2)
 winsound.PlaySound(None, winsound.SND_PURGE)
 
@@ -206,7 +209,6 @@ elif attack1 == ('2'):
         time.sleep(2)
         print('''
 Here are your options: 
-
 Keep drowning because you are bored (1)
 Drown someone else (2)
 Wake up because you were dreaming (3)''')
@@ -338,16 +340,16 @@ Sleep (3)''')
                 import urllib.request
 
                 # Var for username
-                username = getpass.getuser()
                 num = str(0)
 
                 url = "https://i.imgur.com/IdbB5Gy.jpg"
-                path = "C:\\Users\\" + username + "\\Desktop\\snek" + num + ".jpg"
+                path = os.path.dirname(__file__)
+                #+ "\\snek" + num + ".jpg"
 
                 # Saves image of snake to desktop
                 for x in range(1):
                     urllib.request.urlretrieve("https://i.imgur.com/IdbB5Gy.jpg",
-                                               "C:\\Users\\" + username + "\\Desktop\\snek.jpg")
+                                               path + "\\snek.jpg")
                     num = int(num)
                     num = num + 1
                     num = str(num)
@@ -503,7 +505,7 @@ Sleep (3)''')
                 dis.blit(intro2, [230, 20])
 
                 # Loads the saved image from before
-                snakeImg = pygame.image.load("C:\\Users\\" + username + "\\Desktop\\snek.jpg")
+                snakeImg = pygame.image.load(path + "\\snek.jpg")
 
 
                 # Defines snake
@@ -912,5 +914,3 @@ else:
     time.sleep(2)
     print('Thank you for playing :D')
     winimg()
-
-
