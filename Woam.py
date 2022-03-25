@@ -1,4 +1,4 @@
-# Imports Time/ Sleep and Random
+# Imports Time, Sleep and Random
 import sys
 import time
 import random
@@ -38,7 +38,7 @@ print('''
        \/            \/      \/
 Made by Dxrpy
        ''')
-start = input('Press the enter key to start ')
+start = input('Click ENTER to start ')
 winsound.PlaySound(None, winsound.SND_PURGE)
 
 # Plays sound effect
@@ -64,7 +64,7 @@ else:
 
 # Simple print messages for instructions and backstory #
 print()
-print('Your characters name is Woam')
+print('Your character\'s name is Woam')
 time.sleep(2)
 print('Woam is a few chromosomes short.')
 time.sleep(2)
@@ -115,7 +115,7 @@ winsound.PlaySound(None, winsound.SND_PURGE)
 
 # If you choose 1 as your attack
 if attack1 == ('1'):
-    print('The enemy was intimidated and it got cancer and died.')
+    print('The enemy was intimidated. It got cancer and died.')
     time.sleep(2)
 
     print('You wander off and find yourself in a hole.')
@@ -135,9 +135,9 @@ if attack1 == ('1'):
         # Get a random number from 1 to 10 for a 50/50 chance of getting out
         # 50% chance you dont get out
         if jumprandom >= 1 and jumprandom <= 5:
-            print('You didnt jump high enough and you broke your legs')
+            print('You didn\'t jump high enough and you broke your legs')
             time.sleep(1)
-            print('You lost 1 health point.')
+            print('You lose 1hp')
             health = health - 1
             if health <= 0:
                 print('You died.')
@@ -153,7 +153,7 @@ if attack1 == ('1'):
         else:
             print('You jumped out!')
             time.sleep(2)
-            print('And got eaten by a spider lol')
+            print('A spider eats you lol')
             print()
             exit()
 
@@ -165,14 +165,14 @@ if attack1 == ('1'):
 
     # If you type anything else it prints this
     else:
-        print('That probably would work i guess.')                  # Correct Response
+        print('That probably would work I guess.')                  # Correct Response
         time.sleep(1)
         print()
         print('Woam gets out of the hole and is immediately eaten by a snake.')
         time.sleep(3)
         print('You are probably mad as to how the game never really lets you win...')
         time.sleep(2)
-        print('But shut up, its my game so I dont care.')
+        print('But shut up, it\'s my game so I don\'t care.')
         exit()
 
 
@@ -182,7 +182,7 @@ if attack1 == ('1'):
 elif attack1 == ('2'):
     print('The enemy grabbed your fist and broke your hand off.')
     time.sleep(2)
-    print('You lost 1 health point.')
+    print('You lose 1hp')
     health = health - 1
     if health <= 0:
         print()
@@ -191,27 +191,27 @@ elif attack1 == ('2'):
         exit()
 
 
-    # Woam in forrest decicion
+    # Woam in forest decision
     else:
         time.sleep(1)
         print()
-        print('For some reason it decided that was enough and let you go.')
+        print('For some reason it decides that was enough and lets you go.')
         time.sleep(3)
         print('Anyway.')
         time.sleep(1)
         print()
-        print('You walked into a random forest for some reason.')
+        print('You walk into a random forest')
         time.sleep(4)
-        print('AND SOMEHOW... Managed to drown yourself.')
+        print('AND SOMEHOW... manage to drown yourself.')
         time.sleep(3)
         print()
-        print("Jesus Christ Woam... I dont even wanna know how you're gunna get out of this.")
+        print("Jesus Christ Woam... I don\'t even wanna know how you're gonna get out of this.")
         time.sleep(2)
         print('''
 Here are your options: 
 Keep drowning because you are bored (1)
 Drown someone else (2)
-Wake up because you were dreaming (3)''')
+Wake up because you are dreaming (3)''')
 
         # Input for drowning
         drownresp = input()
@@ -232,9 +232,9 @@ Wake up because you were dreaming (3)''')
             time.sleep(2)
             print('sigh.')
             time.sleep(1)
-            print('Im sick of your stupidity, you loose a health point.')
+            print('I\'m sick of your stupidity, you loose a health point.')
             time.sleep(2)
-            print('If you complain ill break your nose.')
+            print('If you complain i\'ll break your nose.')
             health = health - 1
             if health <= 0:
                 print('You died.')
@@ -257,19 +257,19 @@ Ignore him (3)''')
 
                 # If you type 1
                 if woamflewaway == ('1'):
-                    print('THIS ISNT DUCK HUNT')
+                    print('THIS ISN\'T DUCK HUNT')
                     time.sleep(2)
-                    print('You shot him and Woam died.')
+                    print('You shoot him and Woam dies.')
                     exit()
 
 
                 # If you type 2
                 elif woamflewaway == ('2'):
-                    print('Woam turned around to see who called him.')
+                    print('Woam turned around to see who is calling him.')
                     time.sleep(2)
-                    print('He wasnt looking where he was going and hit a wall and got a concussion.')
+                    print('He isn\'t looking where he is going and hits a wall and gets a concussion.')
                     time.sleep(3)
-                    print('You lost 1 health point.')
+                    print('You lose 1hp')
                     health = health - 1
                     if health <= 0:
                         print()
@@ -282,15 +282,15 @@ Ignore him (3)''')
 
                 # If you type 3
                 elif woamflewaway == ('3'):
-                    print('Woam continued to fly away.')
+                    print('Woam continues to fly away.')
                     time.sleep(2)
                     print('You...')
                     time.sleep(1)
                     print('You lost the main character.')
                     time.sleep(2)
-                    print('I dont know if this is a win or a loss but either way im taking a break.')
+                    print('I don\'t know if this is a win or a loss but either way I\'m taking a break.')
                     time.sleep(3)
-                    print('Bye bye now... And bye bye Woam lol hes probably dead.')
+                    print('Bye bye now... And bye bye Woam lol he\'s probably dead.')
                     exit()
 
 
@@ -307,11 +307,11 @@ Ignore him (3)''')
 
         # If you chose 3
         elif drownresp == ('3'):
-            print('I mean you werent dreaming because Woam genuinely managed to drown himself.')
+            print('I mean you aren\'t dreaming because Woam genuinely managed to drown himself.')
             time.sleep(3)
             print('But...')
             time.sleep(1)
-            print("While we were having this conversation he teleported back home. So you're off the hook.")
+            print('While we were having this conversation he teleported back home. So you\'re off the hook.')
             time.sleep(3)
             print()
             print('Now that Woam is safely back home, what should he do?')
@@ -532,9 +532,9 @@ Sleep (3)''')
 
                 time.sleep(3)
                 print('')
-                print('Woam lost and immidiatly rage quit.')
+                print('Woam lost and immidiately rage quit.')
                 time.sleep(2)
-                print('He overreacted and broke his console')
+                print('He overreacts and breaks his console')
                 time.sleep(2)
                 print('The thought of it now hurts his soul.')
                 time.sleep(2)
@@ -572,7 +572,7 @@ Sleep (3)''')
 
             # If you pick 3
             elif homequestion == ('3'):
-                print('Woam doesnt know how to sleep.')
+                print('Woam doesn\'t know how to sleep.')
                 time.sleep(2)
                 print('The realisation of this puts Woam into a shock that paralyses him.')
                 time.sleep(3)
@@ -586,13 +586,13 @@ Sleep (3)''')
             else:
                 print('Leave.')
                 time.sleep(2)
-                print('I dont want you here anymore.')
+                print('I don\'t want you here anymore.')
                 exit()
 
 
         # If you pick anything other than 1, 2 or 3
         else:
-            print('Dunno how many times Ive had to type this.')
+            print('Dunno how many times I\'ve had to type this.')
             time.sleep(2)
             print('BUT LEARN HOW TO READ AND TYPE ONE OF THE NUMBERS.')
             exit()
@@ -610,7 +610,7 @@ elif attack1 == ('3'):
 
 # Message if user doesnt type 1, 2 or 3
 else:
-    print('Clearly you cant read, much like Woam...')
+    print('Clearly you can\'t read, much like Woam...')
     time.sleep(2)
     print('So guess what?')
     time.sleep(2)
@@ -629,7 +629,7 @@ print('Oh you thought it was over...?')
 time.sleep(2)
 print('It will never be over...')
 time.sleep(2)
-print('(until it does i guess)')
+print('(until it does I guess)')
 print()
 time.sleep(1)
 print('Anyway.')
@@ -666,15 +666,15 @@ if day2first == '1':
     print('You g3t up and walk out of the hospital bare naked.')
 
 elif day2first == '2':
-    print('Uh... Well... I didnt really think this part out...')
+    print('Uh... Well... I didn\'t really think this part out...')
     time.sleep(2)
-    print('I dont care, you g3t up anyway.')
+    print('I don\'t care, you g3t up anyway.')
 
 elif day2first == '3':
     print('You g3t up with a barrel roll. Points for style.')
 
 else:
-    print('You just screwed yourself and you dont even know it...')
+    print('You just screwed yourself and you don\'t even know it...')
 
 
 
@@ -683,14 +683,14 @@ else:
 
 # Second task and options
 print()
-print('While you were in hospital, you got immediately evicted from your house.')
+print('While you were in hospital, you immediately got evicted from your house.')
 time.sleep(3)
 print()
 print('Where do you go?')
 print()
 print('''China (1)
 The Streets (2)
-The Narrators House(3)''')
+The Narrator\'s House(3)''')
 
 # Your input
 day2second = input()
@@ -698,14 +698,14 @@ day2second = input()
 if day2second == '1':
     print('HOW?')
     time.sleep(2)
-    print('YOU CANT JUST-')
+    print('YOU CAN\'T JUST-')
     time.sleep(2)
     print('Wh&tever.')
     time.sleep(2)
-    print('You arent going to China, so you are going to live in the trash.')
+    print('You aren\'t going to China, so you are going to live in the trash.')
 
 elif day2second == '2':
-    print('Only logical idea youve had so far...')
+    print('Only logical idea you\'ve had so far...')
     time.sleep(2)
     print('You find a tr&sh can, this is your new home.')
 
@@ -714,10 +714,10 @@ elif day2second == '3':
     time.sleep(2)
     print('I should shutdown your laptop just for thinking about doing that.')
     time.sleep(3)
-    print('Whatever, im sending you to sleep in the tr&sh now tho.')
+    print('Whatever, I\'m sending you to sleep in the tr&sh now though.')
 
 else:
-    print('You just screwed yourself and you dont even know it...')
+    print('You just screwed yourself and you don\'t even know it...')
 
 
 
@@ -744,12 +744,12 @@ if day2third == '1':
 elif day2third == '2':
     print('I mean hey, I aint judging you.')
     time.sleep(1)
-    print('But its a little weird choice of food if i s@y so myself.')
+    print('But it\'s a little weird choice of food if I s@y so myself.')
 
 elif day2third == '3':
     print('Pfffft. Boring.')
     time.sleep(1)
-    print('Better th@n burning it tho i guess.')
+    print('Better th@n burning it though I guess.')
 
 else:
     print('You just screwed yourself and you dont even know it...')
@@ -760,13 +760,13 @@ else:
 # Fourth task and options
 print()
 print('So it turns out that Woam got stuck in a cave after protesting about chickens.')
-print('Dont ask questions. Just accept it.')
+print('Don\'t ask questions. Just accept it.')
 time.sleep(3)
 print()
 print('What does he do?')
 print()
 print('''Become a creeper (1)
-Break his nose (2)
+Breaks his nose (2)
 Start mining down (3)''')
 
 # Your input
@@ -782,7 +782,7 @@ if day2fourth == '1':
     print()
     print('GamerWoam42 died from an explosion')
     time.sleep(2)
-    print('Luckily he re5pawned into an ancient trial.')
+    print('Luckily he re5pawns into an ancient trial.')
 
 elif day2fourth == '2':
     print('He breaks his no5e (again) and blacks out.')
@@ -812,10 +812,10 @@ time.sleep(2)
 print('But... But its password protected.')
 time.sleep(3)
 print()
-print('WAIT! There is a note, heres what it says:')
+print('WAIT! There is a note, here\'s what it says:')
 print()
-print('"' + 'I have hidden secret characters through out your journey')
-print('if im not mistaken, you should have 4 of them.')
+print('"' + 'I have hidden secret characters throughout your journey')
+print('if I\'m not mistaken, you should have 4 of them.')
 print('the last symbol is %. Good luck.' + '"')
 time.sleep(3)
 input('You got all that? ')
@@ -872,10 +872,10 @@ print('Wait i see something...')
 time.sleep(1)
 print('Its ANOTHER NOTE.')
 time.sleep(2)
-print('You arent gunna like what this says....')
+print('You arent gonna like what this says....')
 bees = input('You wanna take a look? ')
 
-if bees == 'i like bees':
+if bees == 'I like bees':
     print("Well you're in luck!")
     time.sleep(2)
     print('''
